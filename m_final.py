@@ -1747,7 +1747,7 @@ Xtrain
 print('RandomForestRegression')
 model2 = RandomForestRegressor(max_depth=10, random_state=random_seed)
 model2.fit(Xtrain, Ytrain)
-y_pred = model2.predict(X_valid)
+y_pred = model2.predict(Xtest)
 # метрики
 print_metrics(Ytest, y_pred)
 
